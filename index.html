@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <meta name="description" content="Calculate your exact age in years, months, and days with our beautiful, responsive age calculator.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <h1>Age Calculator</h1>
+            <p>Discover your exact age in years, months, and days.</p>
+            
+            <div class="input-group">
+                <label for="dob">Enter your Date of Birth</label>
+                <input type="date" id="dob" max="" aria-label="Date of Birth">
+            </div>
+            
+            <button id="calculateBtn">Calculate Age</button>
+            <div id="error-message" class="error"></div>
+            
+            <div class="result-container" id="result-container">
+                <div class="result-box">
+                    <span class="number" id="years">-</span>
+                    <span class="label">Years</span>
+                </div>
+                <div class="result-box">
+                    <span class="number" id="months">-</span>
+                    <span class="label">Months</span>
+                </div>
+                <div class="result-box">
+                    <span class="number" id="days">-</span>
+                    <span class="label">Days</span>
+                </div>
+            </div>
+            <div id="extra-info" class="extra-info"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
